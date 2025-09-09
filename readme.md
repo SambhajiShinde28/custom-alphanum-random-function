@@ -15,13 +15,12 @@ cd alpha-num-random
 
 ### Build the Docker image
 ```bash
-git clone https://github.com/your-username/alpha-num-random.git
-cd alpha-num-random
+docker build -t alpha_num_random_img .
 ```
 
 ### Run the container
 ```bash
-docker run --rm -p 5000:8000 alpha_num_random_img
+docker run sambhaji26/alpha_num_random_img
 ```
 
 ### Development Setup (without Docker)
@@ -42,5 +41,6 @@ python alalpha_num_random_function.py
 ### 🐳 Docker Hub (Optional)
 ```bash
 docker pull sambhaji26/alpha_num_random_img
-docker run --rm -p 5000:8000 sambhaji26/alpha_num_random_img
+docker run sambhaji26/alpha_num_random_img
 ```
+
